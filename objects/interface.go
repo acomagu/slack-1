@@ -619,3 +619,9 @@ type StarsListResponse struct {
 }
 type StarredItem interface{}
 type StarredItemList []StarredItem
+
+// Challenge represents challenge value, used as the request and response of
+// url_verification event.
+type Challenge struct {
+	Challenge string `json:"challenge"`
+}
